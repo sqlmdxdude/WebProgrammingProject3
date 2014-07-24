@@ -17,6 +17,7 @@ img{
     border-left: 1px solid #404040;
     border-bottom: 1px solid #101010;
     border-right: 1px solid #101010;
+    background-image: url(../images/bg.jpg);
 }
 #banner{
 }
@@ -40,7 +41,6 @@ img{
 }
 .companybanner{
     width: 100%;
-    background-image: url(../images/bg.jpg);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
