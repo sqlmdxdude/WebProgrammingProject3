@@ -23,13 +23,30 @@ img{
 }
 #menunavi{
 }
+#menunavi ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menunavi > ul  li{
+    display: inline;
+    padding: 0 15px 0 15px;
+}
 #usercontent{
 }
 #content{
+    width: 85%;
+    float: left;
+    background-color: rgba(240,240,240,.1);
 }
 #quicklinks{
+    width: 15%;
+    float: right;
 }
 #footer{
+    margin-top: 15px;
+    border-top: 1px solid #404040; /*#d4b753;*/
+    font-size: .5em;
 }
 #loginstatus{
     float: right;
@@ -39,10 +56,41 @@ img{
     float:left;
     font-size: .7em;
 }
+#sitesearch{
+    display: inline-block;
+}
+/* define general classes */
+.center{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clearfix{
+    clear: both;
+}
 .companybanner{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-/* define general classes */
+.left{
+    float: left;
+}
+.productcost{
+    font-size: .9em;
+}
+.producttitle{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.right{
+    float: right;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+    background-color: #E0E0E0;
+    background-image: url(../images/bgmain.jpg);
+}

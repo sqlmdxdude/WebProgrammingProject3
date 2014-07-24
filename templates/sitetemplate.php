@@ -3,6 +3,8 @@
     include_once "loginview.php"; 
     include_once "banner.php";
     include_once "menunavigation.php";
+    include_once "footer.php";
+    include_once "quicklinks.php";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -16,10 +18,12 @@
             <div id="banner"><?php echo $cartview; echo $loginview; echo $banner; ?></div>
             <?php echo $menunavi; ?>
             <div id="usercontent">
-                <div id="content"></div>
-                <div id="quicklinks"></div>
+                <div id="content"><?php echo $content; ?></div>
+                <div id="quicklinks"><?php echo $quicklinks; ?></div>
+                <div class="clearfix"></div>
             </div>
-            <div id="footer"></div>
+            <div class="clearfix"></div>
+            <?php echo $footer; ?>
         </div>
     </body>
 </html>
