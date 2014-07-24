@@ -4,8 +4,18 @@ body{
     font-size: 16px; /* Use % or em to make font sizes relative to this main size */
     background-color: #E0E0E0;
 }
+img{
+    border: 0;
+}
 /* define tags with id for structure */
 #main{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #404040;
+    border-left: 1px solid #404040;
+    border-bottom: 1px solid #101010;
+    border-right: 1px solid #101010;
 }
 #banner{
 }
@@ -19,5 +29,16 @@ body{
 }
 #footer{
 }
-
+#loginstatus{
+    float: right;
+}
+#shoppingcart{
+    float:left;
+}
+.companybanner{
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 /* define general classes */
