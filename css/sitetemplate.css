@@ -4,6 +4,9 @@ body{
     font-size: 16px; /* Use % or em to make font sizes relative to this main size */
     background-color: #E0E0E0;
     background-image: url(../images/bgmain.jpg);
+	background-image: url(background.jpg);
+	background-repeat: none;
+	background-attachment: fixed;
 }
 img{
     border: 0;
