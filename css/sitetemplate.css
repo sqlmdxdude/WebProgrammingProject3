@@ -75,6 +75,10 @@ img{
     margin-right: auto;
     text-align: center;
 }
+.latestproducts{
+    background-color:#d4b753;
+    color: #a50221;
+}
 .left{
     float: left;
 }
