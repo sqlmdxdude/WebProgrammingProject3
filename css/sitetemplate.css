@@ -9,39 +9,12 @@ img{
     border: 0;
 }
 /* define tags with id for structure */
-#main{
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    border-top: 1px solid #404040;
-    border-left: 1px solid #404040;
-    border-bottom: 1px solid #101010;
-    border-right: 1px solid #101010;
-    background-image: url(../images/bg.jpg);
-}
 #banner{
-}
-#menunavi{
-}
-#menunavi ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#menunavi > ul  li{
-    display: inline;
-    padding: 0 15px 0 15px;
-}
-#usercontent{
 }
 #content{
     width: 85%;
     float: left;
     background-color: rgba(240,240,240,.1);
-}
-#quicklinks{
-    width: 15%;
-    float: right;
 }
 #footer{
     margin-top: 15px;
@@ -52,6 +25,36 @@ img{
     float: right;
     font-size: .7em;
 }
+#main{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #404040;
+    border-left: 1px solid #404040;
+    border-bottom: 1px solid #101010;
+    border-right: 1px solid #101010;
+    background-image: url(../images/bg.jpg);
+}
+#menunavi{
+}
+#menunavi ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+#menunavi > ul  li{
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+#quicklinks{
+    width: 15%;
+    float: right;
+}
+#quicklinks ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
 #shoppingcart{
     float:left;
     font-size: .7em;
@@ -59,6 +62,9 @@ img{
 #sitesearch{
     display: inline-block;
 }
+#usercontent{
+}
+
 /* define general classes */
 .center{
     width: 100%;
