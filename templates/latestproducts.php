@@ -7,10 +7,14 @@
     // model data will be contained in a mysql result variable named $model
     include_once "/models/latestproducts.php";
     include_once "/widgets/addtocartwidget.php";
+
     
-    $latestproducts='<div class="latestproducts">
-    <div class="producttitle">Innova Beast - Champion Plastic</div><div class="productinstock"># in stock N</div><div class="productcost">Price: $14.99</div></div><div class="clearfix"></div>
-    <div class="productarea"><p class="productinfo"><img src="" class="productimage" width="100px" height="100px"/>This disc is the first choice when a player moves from beginner player to an intermediate player. The speed is enough to change their game while not over frustrating them.</p><p style="float:right;">'.$addtocartwidget.'</p></div>
-    ';
+    $latestproducts="";
+    while($row=mysqli_fetch_assoc($model)){
+        $latestproducts = $latestproducts.'<div class="latestproducts">
+        <div class="producttitle">'.$row["itemname"].'</div><div class="productinstock"># in stock '.$row["numberinstock"].'</div><div class="productcost">Price: '.$row["price"].'</div></div><div class="clearfix"></div>
+        <div class="productarea"><p class="productinfo"><img src="'.$row["pathtoimage"].'" class="productimage" width="100px" height="100px"/>'.$row["description"].'</p><p style="float:right;">'.$addtocartwidget.'</p></div>
+        ';
+    }
     
 ?>
