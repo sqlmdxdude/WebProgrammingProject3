@@ -12,6 +12,7 @@
         <title><?php echo $title; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="css/sitetemplate.css" type="text/css" rel="Stylesheet" media="Screen" />
+        <?php echo $scriptinclude; ?>
     </head>
     <body>
         <div id="main">

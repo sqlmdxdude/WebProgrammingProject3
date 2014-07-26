@@ -13,7 +13,7 @@
     while($row=mysqli_fetch_assoc($model)){
         $latestproducts = $latestproducts.'<div class="latestproducts">
         <div class="producttitle">'.$row["itemname"].'</div><div class="productinstock"># in stock '.$row["numberinstock"].'</div><div class="productcost">Price: '.$row["price"].'</div></div><div class="clearfix"></div>
-        <div class="productarea"><p class="productinfo"><img src="'.$row["pathtoimage"].'" class="productimage" width="100px" height="100px"/>'.$row["description"].'</p><p style="float:right;">'.$addtocartwidget.'</p></div>
+        <div class="productarea"><p class="productinfo"><img src="'.$row["pathtoimage"].'" class="productimage" width="100px" height="100px"/>'.$row["description"].'</p><p style="float:right;">'.str_replace("%inventoryitem%", $row["inventoryid"], $addtocartwidget).'</p></div>
         ';
     }
     

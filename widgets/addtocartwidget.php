@@ -1,3 +1,3 @@
 <?php 
-    $addtocartwidget =  '<input type="text" name="quantityordered" maxlength="3" class="qo" /><a href="#" onclick="addtocart();">Add to cart</a>';
+    $addtocartwidget =  '<input type="text" id="quantityordered%inventoryitem%" name="quantityordered%inventoryitem%" maxlength="3" class="qo" /><a href="#" onclick="addtocart(\'quantityordered%inventoryitem%\');">Add to cart</a>';
 ?>
