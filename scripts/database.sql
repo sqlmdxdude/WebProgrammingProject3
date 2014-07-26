@@ -45,6 +45,7 @@ pathtoimage varchar(256) null,
 price decimal(6,2) not null,
 numberinstock smallint not null,
 backordered tinyint not null,
+arrivaldate date not null,
 constraint PK_INVENTORY primary key (inventoryid));
 
 create table searches (

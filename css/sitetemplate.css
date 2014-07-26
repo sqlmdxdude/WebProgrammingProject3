@@ -46,9 +46,22 @@ img{
     margin: 0;
     padding: 0 0 5px 0;
 }
-#menunavi > ul  li{
+#menunavi ul  li{
     display: inline;
-    padding: 0 15px 0 15px;
+    padding: 0 45px 0 25px;
+}
+#menunavi li a{
+    text-decoration: none;
+    color: #000000;
+} 
+#menunavi li a:hover{
+    text-decoration: underline;
+}
+#menunavi li a:active{
+    color: #808080;
+}
+#menunavi li a:visited{
+    color: #808080;
 }
 #quicklinks{
     width: 15%;
@@ -70,6 +83,10 @@ img{
 }
 
 /* define general classes */
+.cartwidget{
+    width: 80px;
+    float: right;
+}
 .center{
     width: 100%;
     text-align: center;
@@ -92,12 +109,47 @@ img{
 .left{
     float: left;
 }
+.productarea{
+    margin: 0 2px 0 2px;
+}
+.productarea a{
+    font-size: .7em;
+    text-decoration: none;
+    color: #404040;
+    margin-left: 2px;
+}
 .productcost{
+    font-size: .8em;
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+}
+.productimage{
+    float: left;
+    margin: 2px 5px 1px 2px;
+    border: 0;
+}
+.productinfo{
     font-size: .9em;
+    display: inline-block;
+    width: 680px;
+    
+}
+.productinstock{
+    font-size: .8em;
+    display: inline-block;
+    width: 120px;
+    text-align: right;
 }
 .producttitle{
     font-size: 1.1em;
     font-weight: bold;
+    display: inline-block;
+    width: 550px;
+}
+.qo{
+    width: 3em;
+    font-size: .7em;
 }
 .right{
     float: right;
