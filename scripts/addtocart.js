@@ -21,6 +21,7 @@ function addtocart(el,price){
     
     var sc = document.getElementById("shoppingcart");
     sc.innerHTML=parseCart();
+    e.value="";
     
     //document.cookie =  "shoppingcart=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
 }
@@ -29,8 +30,8 @@ function parseCart(){
     var numitemsinorder = 0;
     var subtotal=0.0;
     for(inv=0;inv<cart.length;inv+=3){
-        numitemsinorder += parseInt(cart[inv+1]);
-        subtotal+= parseFloat(cart[inv+2])*parseInt(cart[inv+1]);
+        numitemsinorder += (parseInt(cart[inv+1]) | 0);
+        subtotal+= (parseFloat(cart[inv+2])*parseFloat(cart[inv+1]));
     }
-    return ("Cart ("+numitemsinorder+" item(s)): $"+subtotal);
+    return ("Cart ("+numitemsinorder+" item(s)): $"+(isNaN(subtotal)?"0.00":subtotal));
 }

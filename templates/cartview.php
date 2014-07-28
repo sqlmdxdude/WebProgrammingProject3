@@ -1,3 +1,3 @@
 <?php
-    $cartview='<div id="shoppingcart">Cart (1 item): $18.99</div>';
+    $cartview='<div id="shoppingcart">Cart (0 item(s)): $0.00</div>';
 ?>
