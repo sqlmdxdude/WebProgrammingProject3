@@ -1,8 +1,8 @@
 <!-- http://localhost/WebProgrammingProject3/templates/sitetemplate.php -->
 <?php
-	$content = "" ;
+	$content = "";
 	$scriptinclude = "";
-	include_once "loginview.php";
+	include_once "login_or_registration.php";
     include_once "cartview.php"; 
     include_once "banner.php";
     include_once "menunavigation.php";
