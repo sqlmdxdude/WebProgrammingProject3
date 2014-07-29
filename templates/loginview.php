@@ -4,6 +4,9 @@
 			<div>
 				<table style="color:white;margin-left:20px;">
 					<tr>
+						<td><label>American Loves Mega Lo Mart<label></td>
+					</tr>
+					<tr>
 						<td><label>Enter Your Name:<label></td>
 						<td><input name="username" type="text" size="19" /></td>
 					</tr>

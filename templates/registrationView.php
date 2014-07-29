@@ -3,6 +3,10 @@
 	<form action=" http://localhost/WebProgrammingProject3/models/form_validation_registration.php" method="POST">
 	<table style="color:white;margin-left:20px;"">
 		<tr>
+			<td><label>American Loves Mega Lo Mart<label></td>
+		</tr>
+		<tr>
+		
 			<td>
 				<label>Birth Date:</label>
 			</td>

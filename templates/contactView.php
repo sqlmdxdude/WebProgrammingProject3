@@ -6,9 +6,8 @@
 	<table style="color:white;margin-left:20px;"">
 		<tr>
 			<td>
-				<label> Some Contact content:</label>
+				<label>American Loves Mega Lo Mart</label>
 			</td>
-			
 		</tr>
 		<tr>
 			<td>
@@ -22,7 +21,13 @@
 		</tr>
 		
 		<tr>
-			<td><label><label></td>
+			<td><label>6875 Douglas Blvd<label></td>
+		</tr>
+		<tr>
+			<td><label>Arlington, TX 76006 <label></td>
+		</tr>
+		<tr>
+			<td><label>Phone: 556-443-2222<label></td>
 		</tr>
 	</table>
 	

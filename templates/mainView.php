@@ -4,7 +4,7 @@
 	<table style="color:white;margin-left:20px;"">
 		<tr>
 			<td>
-				<label>New Items:</label>
+				<label>American Loves Mega Lo Mart</label>
 			</td>
 		</tr>
 	</table>

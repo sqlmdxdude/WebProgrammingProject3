@@ -1,6 +1,6 @@
 <?php
     function getConnection(){
-        $con = mysqli_connect("localhost", "root", "Summer", "Person"); //host, username, pw, dbname
+        $con = mysqli_connect("localhost", "root", "Summer", "Test"); //host, username, pw, dbname
         if (mysqli_connect_errno())
         {
             header("Location: dataaccesserror.html");
