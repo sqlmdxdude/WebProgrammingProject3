@@ -8,7 +8,6 @@ body{
     background-image: url(../images/background_Images_Mahogany.jpg);
 	background-repeat: none;
 	background-attachment: fixed;
-	
 }
 img{
     border: 0;
@@ -215,7 +214,7 @@ img{
 }
 <<<<<<< HEAD
 #content_area{
-	text-align:
+
 	border-radius: 2px;
 	border: 2px solid #6495ED;
 	background-color: white;

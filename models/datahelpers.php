@@ -21,12 +21,12 @@
         return false;
     }
     // Runs any valid select statement
-  /*  function runSelectSQL($query){
+   function runSelectSQL($query){
         $con = getConnection();
         if($result=mysqli_query($con, $query)){
             return $result;
         }
         return mysqli_error($con);
-    }*/
+    }
 
 ?>
