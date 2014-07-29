@@ -2,25 +2,32 @@
 <?php
 	$title ="Registration Page";
     include_once "../templates/banner.php"; 
-	include_once "../templates/footer.php";
 	include_once "../templates/menunavigation.php"; 
 	include_once "../templates/footer.php";
-?>
-<!DOCTYPE html> 
-<html lang = "en">
-<!-- http://localhost/WebProgrammingProject3/templates/registration.php* -->
-	<head >
-		<title><?php echo $title ?></title>
-		<meta charset="UTF-8">
-		<script type="text/javascript"></script>
-		<link rel="stylesheet" text="text/css" href="../css/sitetemplate.css">
-	</head>
-	<body>
-	<div id="banner"><?php echo $banner; ?></div> 
-	 <?php echo $menunavi; ?>
-		<div id="content">
+	include_once "../templates/sitetemplate.php";
 	
-		</div>	
-		<?php echo $footer; ?>
-	</body>
-</html>
+?>
+
+
+<!-- http://localhost/WebProgrammingProject3/templates/registration.php* -->
+<div id="content_area">
+	<form action=" Http://localhost/LoginSystem/loginTest.php" method="POST">
+			<div>
+				<table>
+					<tr>
+						<td><label>Enter Your Name:<label></td>
+						<td><input name="username" type="text" size="19" /></td>
+					</tr>
+					<tr>
+						<td><label>Enter Your Password:<label></td>
+						<td><input name="password" type="password" size="19" /></td>
+					</tr>
+					<tr>
+						<td><!-- Left blank on purpose--></td>
+					 <td><input type="submit" value="Login" /><input type="reset" /></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	
+</div>	

@@ -5,9 +5,10 @@ body{
     background-color: #E0E0E0;
     /*background-image: url(../images/bgmain.jpg);*/
 	/*If you Don't like it cool to change it back*/
-	background-image: url(../images/background_Images_Mahogany.jpg);
+    background-image: url(../images/background_Images_Mahogany.jpg);
 	background-repeat: none;
 	background-attachment: fixed;
+	
 }
 img{
     border: 0;
@@ -162,6 +163,16 @@ img{
 .title{
     text-align: center;
     font-weight: bold;
+	font-size: 20px;
     background-color: #E0E0E0;
     background-image: url(../images/bgmain.jpg);
+}
+#content_area{
+	text-align:
+	border-radius: 2px;
+	border: 2px solid #6495ED;
+	background-color: white;
+	height: 1000px;
+	width: 67.5%;
+	margin: auto;
 }

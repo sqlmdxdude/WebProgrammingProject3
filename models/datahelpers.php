@@ -1,12 +1,12 @@
 
 <?php
     function getConnection(){
-        $connection = mysqli_connect("localhost", "admin", "", "test"); //host, username, pw, dbname
+        $con = mysqli_connect("localhost", "root", "Summer", "Person"); //host, username, pw, dbname
         if (mysqli_connect_errno())
         {
             header("Location: dataaccesserror.html");
         }
-        return $connection;
+        return $con;
     }
 
     // One and only one clean up of SQL resources
@@ -21,12 +21,12 @@
         return false;
     }
     // Runs any valid select statement
-    function runSelectSQL($query){
+  /*  function runSelectSQL($query){
         $con = getConnection();
         if($result=mysqli_query($con, $query)){
             return $result;
         }
         return mysqli_error($con);
-    }
+    }*/
 
 ?>
