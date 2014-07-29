@@ -23,9 +23,7 @@
             <div id="banner"><?php echo $cartview; echo $loginview; echo $banner; ?></div>
             <?php echo $menunavi; ?>
             <div id="usercontent">
-                <div id="content"><form id="checkout" name="checkout" action="payment.php" method="post"><?php echo $content; ?><br/><input type="button" value="Check out" onclick="checkoutCart();" /></form><div id="noitemsincart" class="<?php echo (!isset($_COOKIE["shoppingcart"])?"isvisible":"invisible"); ?>"><h2>Cart</h2><p>Your cart is empty. <br/>To add an item to your cart, start by searching or browsing through our departments. When you find something you like, click the "Add to Cart" button and the item will be placed here until you check out.</p></div></div>
-                    <script type="text/javascript"> function checkoutCart(){document.cookie =  "shoppingcart=; expires=Thu, 01 Jan 1970 00:00:00 GMT";}</script>
-                    
+                <div id="content"><form id="checkout" name="checkout" action="payment.php" method="post"><?php echo $content; ?><br/><input type="submit" value="Check out"/></form><div id="noitemsincart" class="<?php echo (!isset($_COOKIE["shoppingcart"])?"isvisible":"invisible"); ?>"><h2>Cart</h2><p>Your cart is empty. <br/>To add an item to your cart, start by searching or browsing through our departments. When you find something you like, click the "Add to Cart" button and the item will be placed here until you check out.</p></div></div>
                 <div id="quicklinks"><?php echo $quicklinks; ?></div>
                 <div class="clearfix"></div>
             </div>

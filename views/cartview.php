@@ -9,7 +9,7 @@
         $content=$content.'<div>
                                 <div class="cartproductarea">
                                     <div class="cartimage"><img src="'.$row["pathtoimage"].'" /></div>
-                                    <div class="cartproducttitle">'.$row["itemname"].'</div>
+                                    <div class="cartproducttitle">'.$row["itemname"].' - Price $' . $row["price"].'</div>
                                     <div class="cartorder"><span>Quantity Ordered</span><br/><input class="qo" maxLength="3" type="text" id="q'.$row["inventoryid"].'"  name="q'.$row["inventoryid"].'" value="'.getItemQuantity($cart, $row["inventoryid"]).'" /><input type="hidden" id="price'.$row["inventoryid"].'"  name="price'.$row["inventoryid"].'" value="'.getItemPrice($cart, $row["inventoryid"]).'" /><br/><a href="#" onclick="updatecart(\'q'.$row["inventoryid"].'\')">Update Cart</a>
                                     <p><span>Line Total</span><br/><input class="linetotal" type="text" name="lt'.$row["inventoryid"].'" id="lt'.$row["inventoryid"].'" value="0.00" readonly/></p></div>
                                 </div>
