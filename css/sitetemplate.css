@@ -66,7 +66,6 @@ img{
     color: #808080;
 }
 #noitemsincart{
-    display: none;
 }
 #quicklinks{
     width: 15%;
@@ -84,10 +83,49 @@ img{
 #sitesearch{
     display: inline-block;
 }
+#totalarea{
+    float: right;
+    width: 120px;
+    border: 5px solid green;
+}
 #usercontent{
 }
 
 /* define general classes */
+.cartimage{
+    border: 0;
+    padding: 2px;
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+}
+.cartproducttitle{
+    font-size: .8em;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    width: 555px;
+
+}
+.cartorder{
+    display: inline-block;
+    font-size: .5em;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+.cartproductarea{
+    padding: 0 2px 0 2px;
+    background-color:#ffffff;
+    border: 2px solid black;
+    display: table-cell;
+}
+.cartproductarea a{
+    font-size: .7em;
+    text-decoration: none;
+    color: #404040;
+    margin-left: 2px;
+}
 .cartwidget{
     width: 80px;
     float: right;
@@ -107,6 +145,9 @@ img{
     margin-right: auto;
     text-align: center;
 }
+.invisible{
+    display: none;
+}
 .latestproducts{
     background-color:#d4b753;
     color: #a50221;
@@ -114,9 +155,14 @@ img{
 .left{
     float: left;
 }
+.linetotal{
+    width: 8em;
+    font-size: .7em;
+}
 .productarea{
     padding: 0 2px 0 2px;
     background-color:#ffffff;
+    border: 1px solid black;
 }
 .productarea a{
     font-size: .7em;
@@ -167,6 +213,7 @@ img{
     background-color: #E0E0E0;
     background-image: url(../images/bgmain.jpg);
 }
+<<<<<<< HEAD
 #content_area{
 	text-align:
 	border-radius: 2px;
@@ -176,3 +223,8 @@ img{
 	width: 67.5%;
 	margin: auto;
 }
+=======
+.isvisible{
+    display: inline;
+}
+>>>>>>> origin/master
