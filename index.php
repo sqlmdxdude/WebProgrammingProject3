@@ -9,7 +9,9 @@
 	 $content = "";
 	 $logincontent = "";
 	 $registrationcontent = "";
-	
+	 $passwordcontent="";
+	 $contactcontent ="";
+	 include_once "templates/mainView.php";
 	 include_once "templates/sitetemplate.php";
 	  
 	 
