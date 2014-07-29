@@ -82,6 +82,11 @@ img{
 #sitesearch{
     display: inline-block;
 }
+#totalarea{
+    float: right;
+    width: 120px;
+    border: 5px solid green;
+}
 #usercontent{
 }
 
@@ -148,6 +153,10 @@ img{
 }
 .left{
     float: left;
+}
+.linetotal{
+    width: 8em;
+    font-size: .7em;
 }
 .productarea{
     padding: 0 2px 0 2px;

@@ -25,7 +25,20 @@ function addtocart(el,price){
     
     //document.cookie =  "shoppingcart=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
 }
+function totalcart(){
+    var form = document.getElementById("checkout");
+    var subtotal=0;
+
+    for(i=0;i<form.length;i++){
+        if(form[i].name.indexOf("price")>-1)
+        { form[i+1].value= parseFloat(form[i].value) * parseInt(form[i-1].value);
+          subtotal+=parseFloat(form[i].value) * parseInt(form[i-1].value); }
+    }
+    var _subtotal = document.getElementById("subtotal");
+    _subtotal.innerHTML = subtotal;
+}
 function updatecart(el){
+    location.reload(); 
     var e=document.getElementById(el);
     var inventoryitem = el.replace(/[A-Za-z]/g,"");
     var cart = document.cookie;
@@ -39,7 +52,7 @@ function updatecart(el){
     parseCart();
     var sc = document.getElementById("shoppingcart");
     sc.innerHTML=parseCart();
-    e.value="";
+    totalcart();
     
 }
 function parseCart(){

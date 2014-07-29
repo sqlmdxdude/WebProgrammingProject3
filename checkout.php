@@ -5,7 +5,6 @@
     include_once "templates/banner.php";
     include_once "templates/menunavigation.php";
     include_once "templates/footer.php";
-    include_once "models/checkoutmodel.php";
     include_once "views/cartview.php";
     include_once "templates/quicklinks.php";
     $scriptinclude='<script src="scripts/addtocart.js" type="text/javascript"></script>';
@@ -35,6 +34,6 @@
         </div>
         <script type="text/javascript">
         var sc = document.getElementById("shoppingcart");
-            sc.innerHTML=parseCart();</script>
+            sc.innerHTML=parseCart(); totalcart();</script>
     </body>
 </html>
