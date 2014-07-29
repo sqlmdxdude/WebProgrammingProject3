@@ -2,7 +2,6 @@
 // http://localhost/WebProgrammingProject3/checkout.php
     include_once "templates/cartview.php";
     include_once "templates/login_or_registration.php"; 
-	
     include_once "templates/banner.php";
     include_once "templates/menunavigation.php";
     include_once "templates/footer.php";

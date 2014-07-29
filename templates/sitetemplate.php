@@ -2,7 +2,6 @@
 <?php
 	$content = "";
 	$scriptinclude = "";
-	
 	include_once "login_or_registration.php";
     include_once "cartview.php"; 
     include_once "banner.php";
@@ -10,12 +9,6 @@
     include_once "footer.php";
     include_once "quicklinks.php";
 	include_once "sessionManager.php";
-	
-	//include_once "contact.php";
-
-	
-
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">

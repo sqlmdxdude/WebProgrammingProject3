@@ -1,6 +1,6 @@
 <?php 
 	$passwordcontent = '
-	<form action="" method="POST">
+	<form action=" http://localhost/WebProgrammingProject3/models/validation_password.php" method="POST">
 	<table style="color:white;margin-left:20px;"">
 		<tr>
 			<td>
@@ -38,10 +38,6 @@
 			</td>
 		</tr>
 	</table>
-	
-	
 </form>
-	
 	';
-	
 ?>

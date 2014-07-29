@@ -1,4 +1,3 @@
-
 <?php
     function getConnection(){
         $con = mysqli_connect("localhost", "root", "Summer", "Person"); //host, username, pw, dbname
@@ -28,5 +27,4 @@
         }
         return mysqli_error($con);
     }
-
 ?>
