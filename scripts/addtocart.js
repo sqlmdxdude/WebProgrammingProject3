@@ -25,6 +25,23 @@ function addtocart(el,price){
     
     //document.cookie =  "shoppingcart=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
 }
+function updatecart(el){
+    var e=document.getElementById(el);
+    var inventoryitem = el.replace(/[A-Za-z]/g,"");
+    var cart = document.cookie;
+    cart = cart.replace("shoppingcart=", "").split("|");
+    for(i=0;i<cart.length;i+=3){
+        if(cart[i]==inventoryitem){
+            cart[i+1]=e.value;
+        }
+    }
+    document.cookie="shoppingcart="+cart.join("|");
+    parseCart();
+    var sc = document.getElementById("shoppingcart");
+    sc.innerHTML=parseCart();
+    e.value="";
+    
+}
 function parseCart(){
     var cart = document.cookie.replace("shoppingcart=","").split("|");
     var numitemsinorder = 0;
