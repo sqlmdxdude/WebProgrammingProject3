@@ -1,10 +1,13 @@
-<!-- http://localhost/WebProgrammingProject3/registrationController.php -->
+<!--http://localhost/WebProgrammingProject3/registrationController.php -->
 <?php
-	$title ="Registration Page";
+
+	$title ="Password Page";
 	$logincontent = "";
-	$passwordcontent = "";
+	$registrationcontent = "";
 	$contactcontent ="";
 	$maincontent="";
 	include_once "templates/registrationView.php";
 	include_once "templates/sitetemplate.php";
+	
 ?>
+
