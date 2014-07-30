@@ -15,7 +15,15 @@
                                 </div>
                             </div>';
     };
-    $content=$content.'<div class="clearfix"></div><div><div id="totalarea"><div id="subtotal"></div><div id="shipping"></div><div id="ordertotal"></div></div></div>';
+    $content=$content.'<div class="clearfix"></div>
+        <div>
+            <div id="totalarea">
+                <div id="subtotal"></div><input type="hidden" id="cartsubtotal" name="cartsubtotal"/>
+                <div id="shipping"></div><input type="hidden" id="cartshipping" name="cartshipping"/>
+                <div id="tax"></div><input type="hidden" id="carttax" name="carttax"/>
+                <div id="ordertotal"></div><input type="hidden" id="cartordertotal" name="cartordertotal"/>
+            </div>
+        </div>';
     $content = "<div>Cart</div>".$content;
 
 

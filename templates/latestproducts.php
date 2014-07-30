@@ -7,7 +7,7 @@
     // model data will be contained in a mysql result variable named $model
     include_once "/models/latestproducts.php";
     include_once "/widgets/addtocartwidget.php";
-
+    
     
     $latestproducts="";
     while($row=mysqli_fetch_assoc($model)){

@@ -35,7 +35,24 @@ function totalcart(){
           subtotal+=parseFloat(form[i].value) * parseInt(form[i-1].value); }
     }
     var _subtotal = document.getElementById("subtotal");
-    _subtotal.innerHTML = subtotal;
+    _subtotal.innerHTML = "Subtotal: "+numeral(subtotal).format('$0,0.00');
+    document.getElementById("cartsubtotal").value = subtotal;
+
+    var _shipping = document.getElementById("shipping");
+    var shipping = (subtotal>=50?0:15);
+    _shipping.innerHTML = "Shipping: "+numeral(shipping).format('$0,0.00');
+    document.getElementById("cartshipping").value = shipping;
+
+    var _tax = document.getElementById("tax");
+    var tax = subtotal * 0.07;
+    _tax.innerHTML = "Tax: "+numeral(tax).format('$0,0.00');
+    document.getElementById("carttax").value = tax;
+    
+    var _ordertotal = document.getElementById("ordertotal");
+    var ordertotal = subtotal + shipping + tax;
+    _ordertotal.innerHTML = "Order Total: "+numeral(ordertotal).format('$0,0.00');
+    document.getElementById("cartordertotal").value = ordertotal;
+    
 }
 function updatecart(el){
     location.reload(); 
@@ -63,5 +80,5 @@ function parseCart(){
         numitemsinorder += (parseInt(cart[inv+1]) | 0);
         subtotal+= (parseFloat(cart[inv+2])*parseFloat(cart[inv+1]));
     }
-    return ("Cart ("+numitemsinorder+" item(s)): $"+(isNaN(subtotal)?"0.00":subtotal));
+    return ("Cart ("+numitemsinorder+" item(s)): "+(isNaN(subtotal)?numeral(0).format('$0,0.00'):numeral(subtotal).format('$0,0.00')));
 }

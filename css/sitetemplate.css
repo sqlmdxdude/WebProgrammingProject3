@@ -84,8 +84,8 @@ img{
 }
 #totalarea{
     float: right;
-    width: 120px;
-    border: 5px solid green;
+    width: 180px;
+    text-align: right;
 }
 #usercontent{
 }
@@ -135,6 +135,11 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+.checkouttitle{
+    text-align: center;
+    font-weight: bold;
+    background-color: #d4b753;
+}
 .clearfix{
     clear: both;
 }
@@ -157,6 +162,13 @@ img{
 .linetotal{
     width: 8em;
     font-size: .7em;
+}
+.paymenttitle{
+    display: inline-block;
+    width: 180px;
+}
+.paymentwindow{
+    border: 5px solid #404040;
 }
 .productarea{
     padding: 0 2px 0 2px;
@@ -212,5 +224,5 @@ img{
     background-image: url(../images/bgmain.jpg);
 }
 .isvisible{
-    display: inline;
+    display: block;
 }
