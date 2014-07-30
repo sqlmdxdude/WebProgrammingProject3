@@ -20,6 +20,4 @@
 //echo "<p>Print confirmation</p>";
 //echo "</body></html>";
 
-
-
 ?>

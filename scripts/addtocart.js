@@ -1,12 +1,12 @@
-
 function addtocart(el,price){
     var e=document.getElementById(el);
     var itemprice = document.getElementById(price);
-    if(e.value==""){
+   
+   if(e.value==""){
         alert ("Please add a quantity");
         return false;
     }
-
+	
     var inventoryitem = el.replace(/[A-Za-z]/g,"");
     if(document.cookie=="")
         document.cookie = "shoppingcart=";
